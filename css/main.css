@@ -1,0 +1,225 @@
+body {
+    background-color: #FCFAF7;
+    color: #000000;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+
+    cursor: url('../media/star.png'), auto;
+}
+
+h1 {
+    font-family: "swear-display-cilati", helvetica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    /* color: #FC72CA; */
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #1B9BB3;
+    transition: ease-out 0.3s;
+}
+
+h2 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    padding-right:1rem;
+}
+
+h3 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h2 {
+    /* font-family: "forma-djr-greek-banner", Helvetica, sans-serif; */
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    /* color: #FC72CA; */
+}
+
+.p1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+a {
+    color: #000000;
+    font-size: 1rem;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    /* color: #FC72CA; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF5C00;
+    transition: ease-out 0.3s;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background-color: #EBFC72;
+    }
+
+    .sticker1 {
+        position: absolute;
+        top: 14rem;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .bird1 {
+        position: absolute;
+        top: 10rem;
+        right: -7rem;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .sticker1 {
+        position: absolute;
+        top: 0rem;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .bird1 {
+        position: absolute;
+        top: 4rem;
+        right: -7rem;
+        z-index: 2;
+    }
+}
+
+
+.bird2 {
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: 3;
+}
+
+@media screen and (min-width:1600px) {
+    body {
+        background-color: #FF5C00;
+    }
+
+    a:hover {
+        color: #FCFAF7;
+        transition: ease-out 0.3s;
+        text-decoration: underline;
+    }
+
+}
+
+/*visual pollution keep it together olivia*/
+/* strong:hover{
+    color:#035C4C;
+    transition: ease-out 0.3s;
+}
+p:hover{
+    color:#035C4C;
+} */
+
+
+
+
+footer {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+.padding-right {
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*making all text have green background when selected*/
+p::selection {
+    background-color: #EBFC72;
+}
+
+em::selection {
+    background-color: #EBFC72;
+}
+
+strong::selection {
+    background-color: #EBFC72;
+}
+
+code::selection {
+    background-color: #EBFC72;
+}
+
+h1::selection {
+    background-color: #EBFC72;
+}
+
+h2::selection {
+    background-color: #EBFC72;
+}
+
+h3::selection {
+    background-color: #EBFC72;
+}
+
+h4::selection {
+    background-color: #EBFC72;
+}
+
+h5::selection {
+    background-color: #EBFC72;
+}
+
+a::selection {
+    background-color: #EBFC72;
+}
+
+ul::selection {
+    background-color: #EBFC72;
+}
+
+ol::selection {
+    background-color: #EBFC72;
+}
+
+li::selection {
+    background-color: #EBFC72;
+}
+
+img::selection {
+    background-color: #EBFC72;
+}
+
+figcaption::selection {
+    background-color: #EBFC72;
+}
