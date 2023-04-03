@@ -1,0 +1,268 @@
+$background-color: #FCFAF7;
+$link-hover-colour: #FF5C00;
+$highlight-colour: #EBFC72;
+$text-colour: #000000;
+
+
+
+
+body {
+    background-color: $background-color;
+    color: $text-colour;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 2rem;
+}
+
+
+/* cursor */
+
+@media screen and (min-width:768px) {
+
+    /* I used this site as reference for the custom cursor
+https://www.codewithrandom.com/2023/02/22/custom-cursor-circle-cursor-using-html-css-javascript/
+*/
+    .cursor {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        transition: all 200ms ease-out;
+        position: fixed;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        transform: translate(calc(-50% + 15px), -50%);
+        mix-blend-mode: darken;
+    }
+
+    /* making cursor bigger when it hovers link or clicks*/
+    .cursor-expand {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+/* text */
+
+
+h1 {
+    font-family: "swear-display-cilati", helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    // margin: 0;
+    // padding: 0;
+}
+
+h2 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3rem;
+    // margin: 0;
+    // padding: 0;
+}
+
+h3 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    // margin: 0;
+    // padding: 0;
+}
+
+h4 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.7rem;
+    // margin: 0;
+    // padding: 0;
+}
+
+h5 {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    // margin: 0;
+    // padding: 0;
+}
+
+p {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 155%;
+}
+
+.p1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 155%;
+    padding-top: 0.25rem;
+}
+
+ul {
+    font-size: 1.2rem;
+
+    li {
+        margin-bottom: 1.8rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+}
+
+code {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #FF5C00;
+}
+
+.site-title {
+    font-family: "swear-display-cilati", helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+a {
+    color: $text-colour;
+    font-size: 1rem;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover-colour;
+    transition: ease-out 0.3s;
+    text-decoration: underline;
+}
+
+
+/* spacing */
+
+.content-wrapper {
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+}
+
+.padding-right {
+    padding-right: 2rem;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+.section-container {
+    max-width: 650px;
+    min-width: 200px;
+    margin-bottom: 5rem;
+}
+
+.styleguide-section-border {
+    border: 1px #ADA08C solid;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.footer-spacing {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+}
+
+.small-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.medium-margin-bottom {
+    margin-bottom: 5rem;
+}
+
+
+.large-margin-bottom {
+    margin-bottom: 10rem;
+}
+
+
+
+
+/* selection colour */
+
+@mixin background-colour {
+    background-color: $highlight-colour;
+}
+
+p::selection {
+    @include background-colour;
+}
+
+em::selection {
+    @include background-colour;
+}
+
+strong::selection {
+    @include background-colour;
+}
+
+code::selection {
+    @include background-colour;
+}
+
+h1::selection {
+    @include background-colour;
+}
+
+h2::selection {
+    @include background-colour;
+}
+
+h3::selection {
+    @include background-colour;
+}
+
+h4::selection {
+    @include background-colour;
+}
+
+h5::selection {
+    @include background-colour;
+}
+
+a::selection {
+    @include background-colour;
+}
+
+ul::selection {
+    @include background-colour;
+}
+
+ol::selection {
+    @include background-colour;
+}
+
+li::selection {
+    @include background-colour;
+}
+
+img::selection {
+    @include background-colour;
+}
+
+figcaption::selection {
+    @include background-colour;
+}

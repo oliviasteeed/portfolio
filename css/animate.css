@@ -1,0 +1,48 @@
+
+@keyframes title-gradient{
+0%{ color: #FC72CA;}
+
+25%{ color: #FF5C00;}
+
+50%{ color: #EBFC72;}
+
+75%{ color: #8FCFDB;}
+
+100%{ color: #1B9BB3;}
+}
+
+@keyframes cursor-gradient{
+    0%{ 
+        background-color: #FC72CA;
+    }
+    
+    25%{ 
+        background-color: #FF5C00;}
+    
+    50%{ 
+        background-color: #EBFC72;}
+    
+    75%{ 
+        background-color: #8FCFDB;}
+    
+    100%{ 
+        background-color: #1B9BB3;}
+    }
+
+.title-gradient {
+    animation-name: title-gradient;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.cursor-gradient {
+    animation-name: cursor-gradient;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
