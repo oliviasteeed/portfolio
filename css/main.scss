@@ -69,8 +69,6 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
-    // margin: 0;
-    // padding: 0;
 }
 
 h4 {
@@ -78,17 +76,13 @@ h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 1.7rem;
-    // margin: 0;
-    // padding: 0;
 }
 
 h5 {
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.3rem;
-    // margin: 0;
-    // padding: 0;
 }
 
 p {
@@ -136,7 +130,6 @@ code {
 
 a {
     color: $text-colour;
-    font-size: 1rem;
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -145,6 +138,21 @@ a {
 }
 
 a:hover {
+    color: $link-hover-colour;
+    transition: ease-out 0.3s;
+    text-decoration: underline;
+}
+
+.a-smaller {
+    color: $text-colour;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.a-smaller:hover {
     color: $link-hover-colour;
     transition: ease-out 0.3s;
     text-decoration: underline;
@@ -193,11 +201,23 @@ header {
     margin-bottom: 5rem;
 }
 
-
 .large-margin-bottom {
     margin-bottom: 10rem;
 }
 
+.small-margin-right{
+    margin-right:0.5rem;
+}
+
+.medium-margin-right{
+    margin-right:3rem;
+}
+
+/* image */
+
+.multiply{
+    mix-blend-mode: multiply;
+}
 
 
 
